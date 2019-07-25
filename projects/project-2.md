@@ -1,25 +1,31 @@
 ---
 layout: project
 type: project
-image: images/vacay-square.png
-title: Vacay
-permalink: projects/vacay
+image: images/smartpool_cards
+title: SmartPool
+permalink: projects/smart-pool
 # All dates must be YYYY-MM-DD format!
-date: 2015-12-15
+date: 2018-12-15
 labels:
-  - Javascript
-  - Meteor
-  - MongoDB
-  - GitHub
-summary: A responsive web application for travel planning that my team developed in ICS 415.
+  - Node.js
+  - Angular
+  - AWS Lambda
+  - Serverless
+  - DynamoDB
+summary: El proyecto es un emprendimiento propio que consta de un dispositivo que realiza la dosificación y una app que visualiza los parámetros y el estado de la piscina.
 ---
 
-<img class="ui medium right floated rounded image" src="../images/vacay-home-page.png">
+<img class="ui medium right floated rounded image" src="../images/smartPoolDevFull.jpg">
 
-Vacay is a web application that I helped create as a team project in ICS 415, Spring 2015. The project helped me learn how to design and implement a responsive web site.
+<img class="ui medium right floated rounded image" src="../images/smartpool-home-page.png">
 
-Vacay is implemented using [Meteor](http://meteor.com), a JavaScript application platform. Within two weeks, we created a website that implements several types of reservations including flights, hotels, and car rentals.
+SmartPool es una solución integral para la dosificación de químicos en piscinas de manera óptima.
+El proyecto es un emprendimiento propio que consta de un dispositivo que realiza la dosificación y una app que visualiza los parámetros y el estado de la piscina. El proyecto consta por un lado de un dispositivo (RaspberryPi + Arduino) conectado a AWS IoT Core y por otro lado un backend desarrollado en Node.js con Serverless Framework sobre AWS Lambda y una PWA desarrollada en Angular desplegada en AWS S3. La base de datos utilizada para almacenar los datos sensados es AWS DynamoDB.
+El proyecto obtuvo un premio en una jornada Startup Weekend by Google Enterpreneurs desarrollada en la Santa Fe, Argentina.
 
-In this project I gained experience with full-stack web application design and associated technologies, including [MongoDB](http://mongodb.com) for database storage, the [Twitter Bootstrap](http://getbootstrap.com/) CSS Framework for the user interface, and Javascript for both client and server-side programming. 
+  <img class="ui image" src="../images/smartpool-award.jpg">
+
  
-Source: <a href="https://github.com/theVacay/vacay"><i class="large github icon"></i>theVacay/vacay</a>
+App Source: <a href="https://github.com/matiaszilli/appSP"><i class="large github icon"></i>matiaszilli/appSP</a>
+Serverless Backend Source: <a href="https://github.com/matiaszilli/backendSP"><i class="large github icon"></i>matiaszilli/backendSP</a>
+Raspberry and Arduino Source: <a href="https://github.com/matiaszilli/deviceSP"><i class="large github icon"></i>matiaszilli/deviceSP</a>
