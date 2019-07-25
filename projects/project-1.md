@@ -1,44 +1,26 @@
 ---
 layout: project
 type: project
-image: images/micromouse.jpg
-title: Micromouse
-permalink: projects/micromouse
+image: images/cell_segmentation_cards.jpg
+title: Deep learning Segmentation
+permalink: projects/cell-segmentation
 # All dates must be YYYY-MM-DD format!
-date: 2015-07-01
+date: 2016-12-16
 labels:
-  - Robotics
-  - Arduino
-  - C++
-summary: My team developed a robotic mouse that won first place in the 2015 UH Micromouse competition.
+  - Deep Learning
+  - Caffe
+  - Python
+summary: A project to segment cells in colon tissue images using deep convolutional neural network techniques. Whis was supported by the European Commission under the Erasmus+ programme at Budapest, Hungary.
 ---
 
 <div class="ui small rounded images">
-  <img class="ui image" src="../images/micromouse-robot.png">
-  <img class="ui image" src="../images/micromouse-robot-2.jpg">
-  <img class="ui image" src="../images/micromouse.jpg">
-  <img class="ui image" src="../images/micromouse-circuit.png">
-</div>
+  <img class="ui image" src="https://raw.githubusercontent.com/matiaszilli/cellSegmentation/master/Results/Example%201/img.jpg">
+  <img class="ui image" src="https://raw.githubusercontent.com/matiaszilli/cellSegmentation/master/Results/Example%201/prob.jpg">
+  <img class="ui image" src="https://raw.githubusercontent.com/matiaszilli/cellSegmentation/master/Results/Example%201/result.jpg">
 
-Micromouse is an event where small robot “mice” solve a 16 x 16 maze.  Events are held worldwide.  The maze is made up of a 16 by 16 gird of cells, each 180 mm square with walls 50 mm high.  The mice are completely autonomous robots that must find their way from a predetermined starting position to the central area of the maze unaided.  The mouse will need to keep track of where it is, discover walls as it explores, map out the maze and detect when it has reached the center.  having reached the center, the mouse will typically perform additional searches of the maze until it has found the most optimal route from the start to the center.  Once the most optimal route has been determined, the mouse will run that route in the shortest possible time.
+In this work, I propose a supervised deep learning-based model for accurate automatic cell nuclei segmentation. Given a tissue image, it begins with a deep convolutional neural network model to generate a probability map. Next, a threshold and morphological operations are applied to distinguish the background and the cells. One of the significant benefits of the proposed method is that it can be applicable to different staining histopathology images taken of different patients. Due to the feature learning characteristic of deep convolutional neural network and the high level shape prior modeling, the proposed method is general enough to work properly across different image scenario like healthy, adenoma, hyperplasia. Finally, I validated the proposed algorithm on several histopathology images using a range of different tissue from various patients with differents diseases.
 
-For this project, I was the lead programmer who was responsible for programming the various capabilities of the mouse.  I started by programming the basics, such as sensor polling and motor actuation using interrupts.  From there, I then programmed the basic PD controls for the motors of the mouse.  The PD control the drive so that the mouse would stay centered while traversing the maze and keep the mouse driving straight.  I also programmed basic algorithms used to solve the maze such as a right wall hugger and a left wall hugger algorithm.  From there I worked on a flood-fill algorithm to help the mouse track where it is in the maze, and to map the route it takes.  We finished with the fastest mouse who finished the maze within our college.
-
-Here is some code that illustrates how we read values from the line sensors:
-
-```js
-byte ADCRead(byte ch)
-{
-    word value;
-    ADC1SC1 = ch;
-    while (ADC1SC1_COCO != 1)
-    {   // wait until ADC conversion is completed   
-    }
-    return ADC1RL;  // lower 8-bit value out of 10-bit data from the ADC
-}
-```
-
-You can learn more at the [UH Micromouse Website](http://www-ee.eng.hawaii.edu/~mmouse/about.html).
+Source and full text: <a href="https://github.com/matiaszilli/cellSegmentation"><i class="large github icon"></i>matiaszilli/cellSegmentation</a>
 
 
 
