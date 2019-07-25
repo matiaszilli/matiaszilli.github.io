@@ -13,7 +13,7 @@ labels:
 summary: Node.js app para migrar datos de una base de datos MSSQL Server a MongoDB.
 ---
 
-<img class="ui image" src="../images/sqltomongo_header.png">
+<img class="ui image" src="../images/sqltomongo_header.jpg">
 
 Node.js app desarrollada para migrar un proyecto que consta de una base de datos MSSQL Server con 1000 millones de registros y tamano 1Tb a MongoDB. La app inserta toda las tablas presentes en MSSQL a una unica collection en MongoDB, es posible parsear la data antes de insertarla en MongoDB para de esta manera tener la posibilidad de agregar, borrar o restructurar los datos antes de hacer la insercion. 
 
