@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/microservices_cart_cards.jpg
+image: images/microservices_cart_card.jpg
 title: Micro Services Cart
 permalink: projects/microservices-cart
 # All dates must be YYYY-MM-DD format!

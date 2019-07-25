@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: images/cell_segmentation_card.jpg
+image: images/cell_segmentation_cards.jpg
 title: Deep learning Segmentation
 permalink: projects/cell-segmentation
 # All dates must be YYYY-MM-DD format!
