@@ -14,9 +14,9 @@ labels:
   - DynamoDB
 summary: El proyecto es un emprendimiento propio que consta de un dispositivo que realiza la dosificación y una app que visualiza los parámetros y el estado de la piscina.
 ---
-<div class="ui small rounded images">
-  <img class="ui image" src="../images/smartPoolDevFull.jpg">
+<div class="ui medium rounded images">
   <img class="ui image" src="../images/smartpool_cards.png">
+  <img class="ui image" src="../images/smartPoolDevFull.jpg">
 </div>
 
 SmartPool es una solución integral para la dosificación de químicos en piscinas de manera óptima. 
