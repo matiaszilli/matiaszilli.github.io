@@ -13,7 +13,7 @@ labels:
 summary: A project to segment cells in colon tissue images using deep convolutional neural network techniques. Whis was supported by the European Commission under the Erasmus+ programme at Budapest, Hungary.
 ---
 
-<div class="ui small rounded images">
+<div class="ui small centered rounded images">
   <img class="ui image" src="https://raw.githubusercontent.com/matiaszilli/cellSegmentation/master/Results/Example%201/img.jpg">
   <img class="ui image" src="https://raw.githubusercontent.com/matiaszilli/cellSegmentation/master/Results/Example%201/prob.jpg">
   <img class="ui image" src="https://raw.githubusercontent.com/matiaszilli/cellSegmentation/master/Results/Example%201/result.jpg">
